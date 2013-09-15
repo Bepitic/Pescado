@@ -1,0 +1,7 @@
+name: Pescado
+main: pescado.Pescado
+version: 0.0.48
+commands:
+ pescado:
+  description: Inicia el juego de la peste sobre ti.
+  usage: /pescado ( Para iniciar la peste sobre ti. )

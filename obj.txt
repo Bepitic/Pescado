@@ -1,0 +1,47 @@
+objetivos
++ que cuando mates a uno salga un texto diciendo que tu tienes la peste y te den un pescado.
++ que solo puedan pegar los que no tienen la peste al que tiene la peste , entre si no.
++ que a todos los que estan en el mundo se les de un mensaje de quien tiene la peste, o que .
+
+cosas que he mirado y se que puedo hacer
++ (que se pueda dar un pescado) ok
++ que a los del mundo les salga un mensaje ok.
++ saber quien ha matado a quien  ok.
++ (opcional que quien tenga la peste se le ponga un bloque en la cabeza / supongo que podre saber como se hace)
+
+cosas que creo conveniente:
++ si se desconecta alguien en el mundo con la peste que cambie a otro.
+
+
+cuando se ejecuta el comando se hace el pescado quien lo ha ejecutado.
+el que consiga un maximo de 40 sec o variable, quien lo mate se aplica el pescado.
+
+
+*que cuando se ejecute el comando se haga pescado a quien lo ha ejecutado.(Done)
+*que cuando se mate al ejecutado cambie el pescado.(done)
+*que se informe a todos los jugadores de quien es el nuevo pescado. (Done)
+*que registre los segundos de cada jugador que tiene el pescado.(Done)
+*que se resete el contador cuando se conecta. (Done)
+
+-bug cuando cambia el pescado  arreglar el bug de los segundos(supuestamente done)
+-cuando comienza el juego que se avise (supuestamente done)
+-Que cada 5 segundos que un jugador tenga el pescado se avise(done)
+-que cuando mueres al muerto se avise del tiempo disponible(supuestamente Done)
+-que tenga un item en la cabeza(done)
+-que cambie el item.(supuestamente Done)
+-que quien sea el pescado tenga un item rawfish con knockbak4 (done)
+-que no se dropee items en el mundo (supuestamente done)
+-que el resto de los usuarios tengan una espada de madera(supuestamente done)
+que no aparezca el nombre en la cabeza
+poner colores a los textos
+-que los de un equipo no se puedan pegar entre ellos (Done)
+
+
+
+
+
+arreglar el bug del tiempo de quien tiene el pescado
+que se resetee cada vez
+cuando empiece se empiece con un pescado y no con una espada (done)
+y que cuando mueras no se dropee items (done)
+cuando te conectas de nuevo te salga una espada de madera(done)
