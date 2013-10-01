@@ -61,7 +61,8 @@ public class checkSecondsTask extends BukkitRunnable {
 				//cambiar a 10
 				if(timeDone%10 == 0)
 				{
-					BukkitTask checktas = new SendMsgTask(plugin, plyr.getWorld(), plyr, "El Pescado tiene : "+ timeDone +" sec -> ").runTask(plugin);
+					BukkitTask checktas = new SendMsgTask(plugin, plyr.getWorld(), plyr, plugin.getConfig().getString("translate.EventAnnouncement")  +" " + timeDone + " "
+							+ plugin.getConfig().getString("translate.EventAnnouncement2") ).runTask(plugin);
 					BukkitTask chec = new giveSwordTask(plugin, plyr.getWorld()).runTask(plugin);
 				}
 				

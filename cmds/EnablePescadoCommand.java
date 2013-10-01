@@ -65,7 +65,7 @@ public class EnablePescadoCommand implements CommandExecutor  {
 					player.getInventory().setItemInHand(pescado);
 					player.getItemInHand().addUnsafeEnchantment(Enchantment.KNOCKBACK, 4);
 					
-					BukkitTask checktask2 = new SendMsgTask(plugin, player.getWorld(), player, " WINO WANT FISH ha comenzado toca matar a : ").runTask(plugin);
+					BukkitTask checktask2 = new SendMsgTask(plugin, player.getWorld(), player, " WINO WANT FISH "+ plugin.getConfig().getString("translate.EventStart") ).runTask(plugin);
 					plugin.getConfig().set("users.TimePescado." + player.getDisplayName(),0 );
 					plugin.saveConfig();
 					BukkitTask checktask3 = new checkSecondsTask(plugin, sec,  player.getWorld()).runTaskTimer(plugin, 20L, 20L);
@@ -83,7 +83,7 @@ public class EnablePescadoCommand implements CommandExecutor  {
 			
 			if(arg3.length == 1){
 				if(arg3[0].equalsIgnoreCase("stop")){
-					player.sendMessage(ChatColor.RED + "Pescado parado");
+					player.sendMessage(ChatColor.RED + "Pescado stop");
 					plugin.getServer().getScheduler().cancelTasks(plugin);
 					plugin.getConfig().set("canUse", true);
 					plugin.saveConfig();

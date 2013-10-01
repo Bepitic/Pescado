@@ -12,14 +12,14 @@ public class Pescado extends JavaPlugin {
 	// Cuando el plugin se activa
 	
 	public void onEnable(){
+		saveDefaultConfig();
 		
 		getLogger().info("Pescado was Enable.");
-		saveDefaultConfig();
 		getServer().getPluginManager().registerEvents(new PlyrRIPEvent(this), this);
 		getServer().getPluginManager().registerEvents(new DamageEvent(this), this);
 		getServer().getPluginManager().registerEvents(new DroItemEvent(this), this);
 		getCommand("pescado").setExecutor(new EnablePescadoCommand(this));
-		
+		super.onEnable();
 	}
 	
 	// Cuando el plugin se desactiva
@@ -27,7 +27,7 @@ public class Pescado extends JavaPlugin {
 	public void onDisable(){
 		
 		getLogger().info("Pescado was Disable.");
-		
+		super.onDisable();
 	}
 	
 	

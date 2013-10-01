@@ -1,24 +1,16 @@
 package lstnrEvents;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
-
 import task.SendMsgTask;
 import task.setTime0Task;
-
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.scheduler.BukkitTask;
-
 import pescado.Pescado;
-
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 
@@ -43,8 +35,8 @@ public class PlyrRIPEvent implements Listener {
 		
 		event.getDrops().clear();
 		
-		muerto.sendMessage(ChatColor.AQUA + "Tenias "+ plugin.getConfig().getInt("users.TimePescado." + muerto.getDisplayName() ) + 
-				" segundos");
+		muerto.sendMessage(ChatColor.AQUA + plugin.getConfig().getString("translate.EventRip") + plugin.getConfig().getInt("users.TimePescado." + muerto.getDisplayName() ) + 
+				plugin.getConfig().getString("translate.EventRip2") );
 		
 		plugin.getConfig().set("users.TimePescado." + muerto.getDisplayName(),0 );
 		
@@ -60,7 +52,7 @@ public class PlyrRIPEvent implements Listener {
 		//plugin.getConfig().set("users.TimePescadoAux." + asesino.getDisplayName(), segActual);
 		plugin.saveConfig();
 		
-		BukkitTask SendMsgTask = new SendMsgTask(plugin, asesino.getWorld(), asesino, "El nuevo pescado es: ").runTask(plugin);
+		BukkitTask SendMsgTask = new SendMsgTask(plugin, asesino.getWorld(), asesino, plugin.getConfig().getString("translate.EventNewPescado") ).runTask(plugin);
 		BukkitTask setTime0Task = new setTime0Task(plugin, asesino.getWorld()).runTask(plugin);
 		}
 

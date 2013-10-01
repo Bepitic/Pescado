@@ -1,6 +1,6 @@
 name: Pescado
 main: pescado.Pescado
-version: 0.0.48
+version: 0.0.50
 commands:
  pescado:
   description: Inicia el juego de la peste sobre ti.

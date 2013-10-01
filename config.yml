@@ -1,1 +1,8 @@
+translate:
+ EventStart: ha comenzado toca matar a ->
+ EventAnnouncement: El Pescado tiene  
+ EventAnnouncement2: sec ->
+ EventRip: Tenias
+ EventRip2: Sec
+ EventNewPescado: El nuevo pescado es  
 canUse: true
